@@ -30,6 +30,10 @@
             width: 90vw;
             height: 90vh;
         }
+        @include m.respond-to('mobile') {
+            width: 95vw;
+            height: 95vh;
+        }
 
         .modal-topbar {
             display: flex;

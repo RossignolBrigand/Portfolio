@@ -1,11 +1,12 @@
 @use '../../scss/abstracts/mixins' as m;
+@use '../../scss/abstracts/variables' as v;
 
 .services-section {
     @include m.margin-bottom;
     @include m.margin-sides;
 
     h2 {
-        border-top: 2px solid inherit;
+        margin-bottom: 2rem;
     }
     h3 {
         width: auto;
