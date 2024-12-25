@@ -1,5 +1,5 @@
 @use '../../scss/abstracts/variables' as v;
-
+@use '../../scss/abstracts/animations' as *;
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -19,12 +19,24 @@ nav {
     }
 
     // Hamburger menu button (visible on mobile only)
-    .hamburger-menu {
-        display: block; // Hidden on larger screens
-        font-size: 24px;
-        background: none;
-        border: none;
-        cursor: pointer;
+    .nav-btn {
+        display: flex; // Hidden on larger screens
+        width: 2.5rem;
+        height: 2.5rem;
+        justify-content: center;
+        align-items: center;
+
+        .hamburger-menu {
+            width: inherit;
+            height: inherit;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        button {
+            font-size: large;
+        }
 
         @media (max-width: 768px) {
             display: block; // Visible only on mobile

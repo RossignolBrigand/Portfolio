@@ -32,6 +32,10 @@ header {
 
         nav {
             gap: 0.5rem;
+
+            @include m.respond-to('tablet') {
+                order: 2;
+            }
         }
     }
 

@@ -3,6 +3,7 @@
 .home-container {
     width: 100vw;
     height: 100svh;
-    min-width: 468px;
+    min-width: 320px;
     max-width: 1440px;
+    display: grid;
 }

@@ -52,6 +52,10 @@ h1 {
     font-size: map-get($font_sizes, 'xxlarge');
     margin-bottom: 1rem;
     font-weight: 700;
+
+    @include m.respond-to('tablet') {
+        font-size: map-get($font_sizes, 'xlarge');
+    }
 }
 
 h2 {
@@ -79,6 +83,13 @@ a:active {
     text-decoration: none;
     color: inherit;
 
+    @include m.respond-to('laptop') {
+        font-size: map-get($font_sizes, 'large');
+    }
+    @include m.respond-to('tablet') {
+        font-size: map-get($font_sizes, 'medium');
+    }
+
     &:hover {
         font-weight: 600;
     }
@@ -90,6 +101,10 @@ button {
     color: inherit;
     font-family: $font_title;
     font-size: map-get($font-sizes, 'medium');
+
+    @include m.respond-to('mobile') {
+        font-size: map-get($font-sizes, 'small');
+    }
 }
 
 p,
@@ -105,10 +120,18 @@ span {
 em,
 strong {
     font-size: map-get($font-sizes, 'large');
+
+    @include m.respond-to('tablet') {
+        font-size: map-get($font-sizes, 'medium');
+    }
 }
 
 label {
     font-family: $font-title;
     font-weight: 600;
     font-size: map-get($font-sizes, 'medium');
+
+    @include m.respond-to('tablet') {
+        font-size: map-get($font-sizes, 'small');
+    }
 }

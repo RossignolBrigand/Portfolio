@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { useTranslation } from 'react-i18next';
+import { HiMenu } from 'react-icons/hi';
 
 import './_navigationBar.scss';
 
@@ -65,7 +66,7 @@ export default function NavigationBar({ headerHeight, windowSize }) {
                             onClick={toggleMenu}
                             aria-label="Toggle navigation menu"
                         >
-                            ☰
+                            <HiMenu color="white" />
                         </button>
                     </div>
                     <div

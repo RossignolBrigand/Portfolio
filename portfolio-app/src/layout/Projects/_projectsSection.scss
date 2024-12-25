@@ -3,7 +3,6 @@
 
 .projects-section {
     @include m.margin-bottom;
-    margin: 0 auto;
 
     &__title {
         background-color: v.$color_black;

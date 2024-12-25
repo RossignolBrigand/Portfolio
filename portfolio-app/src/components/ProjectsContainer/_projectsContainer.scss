@@ -4,12 +4,16 @@
     width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     column-gap: 4rem;
+    row-gap: 3rem;
     padding: 60px;
     box-sizing: border-box;
 
-    @include m.respond-to('laptop') {
+    @include m.respond-to('tablet') {
         grid-template-columns: 1fr;
+    }
+    @include m.respond-to('tablet') {
+        padding: 40px;
     }
 }

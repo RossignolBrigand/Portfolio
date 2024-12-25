@@ -15,16 +15,21 @@
     z-index: 1001;
 
     .modal-wrapper {
-        width: 70vw;
-        max-width: 800px;
-        height: 70vh;
+        max-width: 1200px;
+        width: 80vw;
+        height: 80vh;
+        padding: 1.5rem;
         background-color: v.$tertiary-color;
-        padding: 1rem;
-        border: 1px solid v.$font-black;
+        border: 1px solid #00000088;
         border-radius: 1rem;
         position: relative;
         overflow: hidden;
         animation: fadeInFromTop 250ms ease-in;
+
+        @include m.respond-to('tablet') {
+            width: 90vw;
+            height: 90vh;
+        }
 
         .modal-topbar {
             display: flex;
@@ -44,16 +49,15 @@
             width: 100%;
             height: 100%;
             background: inherit;
-            padding: 32px;
-            border-radius: 8px;
-            width: 100%;
             overflow-y: auto;
 
             &__image {
                 width: 100%;
-                max-height: 40%;
                 height: 400px;
-                margin-bottom: 1rem;
+                max-height: 40%;
+                margin-bottom: 2rem;
+                padding: 1rem;
+
                 img {
                     width: 100%;
                     height: 100%;
@@ -68,11 +72,16 @@
                 justify-content: space-between;
                 gap: 1rem;
                 margin-bottom: 2rem;
+                padding: 2rem;
+
+                .tags-wrapper {
+                    margin-top: 0.5rem;
+                }
             }
             &__links {
                 display: flex;
                 margin-top: auto;
-                margin-bottom: 2rem;
+                margin: 2rem;
                 gap: 2rem;
             }
         }

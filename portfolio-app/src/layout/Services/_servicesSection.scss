@@ -15,7 +15,8 @@
     .services-wrapper {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 1rem;
+        margin: 0 2rem;
+        gap: 3rem;
 
         @include m.respond-to('tablet') {
             grid-template-columns: 1fr;

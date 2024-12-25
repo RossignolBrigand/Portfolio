@@ -42,9 +42,9 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    text-align: center;
                 }
                 svg {
-                    @include m.icon-size-medium;
                     width: 3rem;
                     height: 3rem;
                 }

@@ -1,4 +1,5 @@
 @use '../../scss/abstracts/animations' as *;
+@use '../../scss/abstracts/mixins' as m;
 
 .card-wrapper {
     width: 100%;
@@ -14,6 +15,12 @@
     cursor: pointer;
     filter: grayscale(0.8);
     transition: all 250ms ease;
+    @include m.respond-to('tablet') {
+        filter: grayscale(0);
+    }
+    @include m.respond-to('mobile') {
+        gap: 0.5rem;
+    }
 
     &:hover {
         box-shadow:
