@@ -31,7 +31,7 @@
             height: 90vh;
         }
         @include m.respond-to('mobile') {
-            width: 95vw;
+            width: 100vw;
             height: 95vh;
         }
 
