@@ -10,6 +10,16 @@
         color: white;
         font-family: t.$font-title;
     }
+    label.visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+    }
 }
 
 .translation-button {
@@ -18,4 +28,9 @@
     padding: 0 0.5rem;
     background-color: transparent;
     font-size: 1rem;
+
+    & option {
+        background-color: v.$font-white;
+        color: v.$font-black;
+    }
 }

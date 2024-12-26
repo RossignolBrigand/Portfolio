@@ -55,6 +55,7 @@ function HomePage() {
                         }
                         children={<BsArrowUp />}
                         variant="toTop"
+                        ariaLabel="Scroll to top"
                     />
                 ) : null}
             </main>

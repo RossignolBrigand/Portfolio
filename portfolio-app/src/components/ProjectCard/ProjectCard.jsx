@@ -15,11 +15,24 @@ export default function ProjectCard({
     onClick,
     tags,
 }) {
+    const [ref, isVisible] = useOnScreen(0.1);
 
-    const [ref, isVisible] = useOnScreen(0.1)
-
+    const handleKeyPress = (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault(); // Prevent default scrolling for Space key
+            onClick(); // Trigger the click handler
+        }
+    };
     return (
-        <div className={`card-wrapper ${isVisible ? "visible" : ""}`} onClick={onClick} ref={ref}>
+        <div
+            className={`card-wrapper ${isVisible ? 'visible' : ''}`}
+            onClick={onClick}
+            onKeyDown={handleKeyPress}
+            ref={ref}
+            role="button"
+            tabIndex="0"
+            aria-label={`View details for ${name}`}
+        >
             {coverUrl ? (
                 <div className="card-image">
                     <img src={coverUrl} alt={coverAlt}></img>

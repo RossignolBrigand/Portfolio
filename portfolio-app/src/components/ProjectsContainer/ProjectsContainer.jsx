@@ -30,7 +30,7 @@ export default function ProjectsContainer() {
             detailedDescription: project.detailedDescription[language],
             cover: {
                 url: project.cover.url,
-                alt: project.cover.alt,
+                alt: project.cover.alt[language],
             },
             images: localizedImages,
         };

@@ -8,6 +8,7 @@ export default function Button({
     onClick,
     variant = DEFAULT_VARIANT,
     disabled = false,
+    ariaLabel,
     href = '',
     target = '',
     download,
@@ -33,6 +34,7 @@ export default function Button({
     return (
         <button
             className={`btn btn-${variant}`}
+            aria-label={ariaLabel}
             onClick={onClick}
             disabled={disabled}
         >

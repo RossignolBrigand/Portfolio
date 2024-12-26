@@ -5,7 +5,6 @@ import { languages } from '../../utils/i18nConfig';
 import './languageSwitch.scss';
 
 const LanguageSwitcher = () => {
-
     const { i18n } = useTranslation();
 
     const changeLanguage = (lang) => {
@@ -25,20 +24,26 @@ const LanguageSwitcher = () => {
         }
     }, [i18n]);
 
-    const { t } = useTranslation('header')
+    const { t } = useTranslation('header');
 
     return (
-        <div className='custom-language-select'>
+        <div className="custom-language-select">
             <span>{t('language')}</span>
+            <label htmlFor="language-selector" className="visually-hidden">
+                {t('language')} {/* For screen readers */}
+            </label>
             <select
-                className='translation-button'
+                id="language-selector"
+                className="translation-button"
                 value={i18n.language}
                 onChange={(e) => changeLanguage(e.target.value)}
+                aria-label="Language selector"
             >
                 {languages.map((lang) => (
-                    <option key={lang.code} value={lang.code}>{lang.name}</option>
+                    <option key={lang.code} value={lang.code}>
+                        {lang.name}
+                    </option>
                 ))}
-
             </select>
         </div>
     );

@@ -1,13 +1,11 @@
 import { useState, useEffect } from 'react';
 
 import Button from '../Button/Button';
-import { BsArrowBarRight, BsArrowBarLeft } from "react-icons/bs";
+import { BsArrowBarRight, BsArrowBarLeft } from 'react-icons/bs';
 
 import './_imgCarousel.scss';
 
 export default function ImgCarousel({ images }, isOpen) {
-    console.log(images);
-
     const [activeImage, setActiveImage] = useState(0);
 
     const nextImage = () => {
@@ -22,11 +20,13 @@ export default function ImgCarousel({ images }, isOpen) {
     useEffect(() => {
         if (isOpen) {
             const timer = setInterval(() => {
-                setActiveImage((activeImage === images.length - 1 ? 0 : activeImage + 1))
+                setActiveImage(
+                    activeImage === images.length - 1 ? 0 : activeImage + 1,
+                );
             }, 3000);
             return () => clearInterval(timer);
         }
-    }, [isOpen, activeImage, images.length])
+    }, [isOpen, activeImage, images.length]);
 
     return (
         <div className="carousel-container">
@@ -37,14 +37,21 @@ export default function ImgCarousel({ images }, isOpen) {
             ) : null}
             <div className="carousel-images">
                 {images.map((image, index) => (
-                    <div className={`${activeImage === index ? 'carousel-image' : 'carousel-image__hidden'}`} key={`Image ${index}`}>
+                    <div
+                        className={`${activeImage === index ? 'carousel-image' : 'carousel-image__hidden'}`}
+                        key={`Image ${index}`}
+                    >
                         <img
                             key={index}
                             alt={image.alt}
                             src={image.url}
-                            loading='lazy'
+                            loading="lazy"
                         />
-                        {images.length > 1 ? (<span className='carousel-image__counter'>{index + 1}/{images.length}</span>) : null}
+                        {images.length > 1 ? (
+                            <span className="carousel-image__counter">
+                                {index + 1}/{images.length}
+                            </span>
+                        ) : null}
                     </div>
                 ))}
             </div>
