@@ -16,7 +16,6 @@ export default function ContactForm() {
     } = useForm();
 
     const onSubmit = async (data) => {
-        console.log(data);
         const subject = encodeURIComponent(`Contact from ${data.name}`);
         const body = encodeURIComponent(
             `Message: ${data.mailBody}%0D%0A%0D%0AFrom: ${data.name}%0D%0AEmail: ${data.email}`,
