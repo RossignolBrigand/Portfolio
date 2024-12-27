@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.d79cfa95.css",
-    "main.js": "/Portfolio/static/js/main.6add45d0.js",
+    "main.css": "/Portfolio/static/css/main.245462eb.css",
+    "main.js": "/Portfolio/static/js/main.087e64fc.js",
     "static/media/postman-icon-svgrepo-com.svg": "/Portfolio/static/media/postman-icon-svgrepo-com.c74cd48d00339ba03ff2e6ed3f9d0c4d.svg",
     "static/media/undraw_web.svg": "/Portfolio/static/media/undraw_web.864193153aee4a2ada875721cedb0e14.svg",
     "static/media/undraw_static.svg": "/Portfolio/static/media/undraw_static.e2ab46cd5a7dd191e3b8b8048e75beb8.svg",
@@ -10,11 +10,11 @@
     "index.html": "/Portfolio/index.html",
     "static/media/webpack-svgrepo-com.svg": "/Portfolio/static/media/webpack-svgrepo-com.13dd22e3b763fc1ef03fc365ea341527.svg",
     "static/media/express-svgrepo-com.svg": "/Portfolio/static/media/express-svgrepo-com.076c798a78385ade2dc698f1a1d92613.svg",
-    "main.d79cfa95.css.map": "/Portfolio/static/css/main.d79cfa95.css.map",
-    "main.6add45d0.js.map": "/Portfolio/static/js/main.6add45d0.js.map"
+    "main.245462eb.css.map": "/Portfolio/static/css/main.245462eb.css.map",
+    "main.087e64fc.js.map": "/Portfolio/static/js/main.087e64fc.js.map"
   },
   "entrypoints": [
-    "static/css/main.d79cfa95.css",
-    "static/js/main.6add45d0.js"
+    "static/css/main.245462eb.css",
+    "static/js/main.087e64fc.js"
   ]
 }
