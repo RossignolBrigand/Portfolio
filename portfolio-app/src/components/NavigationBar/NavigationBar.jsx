@@ -14,7 +14,7 @@ export default function NavigationBar({ headerHeight, windowSize }) {
     // Custom function to use along HashNavlink to handle the sticky nav
     const scrollWithOffset = (el) => {
         const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
-        const yOffset = -headerHeight - 20;
+        const yOffset = -headerHeight - 30;
         window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
     };
 
@@ -25,7 +25,7 @@ export default function NavigationBar({ headerHeight, windowSize }) {
         const sections = document.querySelectorAll('section');
         const observerOptions = {
             root: null,
-            threshold: 0.4,
+            threshold: 0.3,
         };
 
         const observer = new IntersectionObserver((entries) => {
