@@ -1,4 +1,3 @@
-
 import { FaTimes } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import Modal from 'react-modal';
@@ -11,13 +10,19 @@ import './_projectModal.scss';
 //-------------------------------------------------
 
 export default function ProjectModal({ isOpen, project, closeModal }) {
-
     const { t } = useTranslation('modal');
 
     if (!project) return null;
 
-    const { name, detailedDescription, website, codebase, images, tags } =
-        project;
+    const {
+        name,
+        detailedDescription,
+        issues,
+        website,
+        codebase,
+        images,
+        tags,
+    } = project;
 
     return (
         <Modal
@@ -28,7 +33,7 @@ export default function ProjectModal({ isOpen, project, closeModal }) {
             className={'modal-projects'}
         >
             <div className="modal-wrapper">
-                <div className='modal-topbar'>
+                <div className="modal-topbar">
                     <button className="btn-close-modal" onClick={closeModal}>
                         <FaTimes />
                     </button>
@@ -43,7 +48,14 @@ export default function ProjectModal({ isOpen, project, closeModal }) {
                     </div>
                     <div className="modal-content__text">
                         <h2>{name}</h2>
+                        <h3 className="modal-content__text--title">
+                            {t('descriptionTitle')}
+                        </h3>
                         <p>{detailedDescription}</p>
+                        <h3 className="modal-content__text--title">
+                            {t('issuesTitle')}
+                        </h3>
+                        <p>{issues}</p>
                         <TagSystem data={tags} />
                         <div className="modal-content__links">
                             <a
@@ -62,7 +74,6 @@ export default function ProjectModal({ isOpen, project, closeModal }) {
                             </a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </Modal>

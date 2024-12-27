@@ -13,6 +13,10 @@
             "en": "For this project I had to follow a dynamic mock-up made with Figma and recreate the frontend of the application in React with create-react-app. I had to use different hooks and react-router to manage the architecture of the application in an optimal way. The app is also responsive. I am currently refactoring the project to integrate a backend and a database as well as a login system to be able to fetch and store new content.",
             "fr": "Pour ce projet j'ai du suivre un mock-up dynamique réalisé avec Figma et recréer le frontend de l'application en React avec create-react-app. J'ai du utiliser différents hooks et react-router pour gérer l'architecture de l'application de façon optimale. L'application est également responsive. Je suis actuellement en train de refactoriser le projet pour intégrer un backend et une base de données ainsi qu'un système de connexion pour pouvoir récupérer et stocker de nouveaux contenus."
         },
+        "issues": {
+            "en": "Broadly speaking, learning React was done progressively and the courses were well designed. I had some difficulty understanding how hooks work and how to navigate the project's architecture but I was able to solve those issues by researching and practicing.",
+            "fr": "De manière générale, l'apprentissage de React s'est fait de manière progressive et les cours étaient bien conçus. J'ai eu quelques difficultés à comprendre le fonctionnement des hooks et comment naviguer l'architecture du projet mais j'ai pu les résoudre en me documentant et en pratiquant."
+        },
         "cover": {
             "url": "/assets/images/projects/Kasa/Kasa-cover.webp",
             "alt": {
@@ -67,6 +71,10 @@
         "detailedDescription": {
             "en": "For this project I had to build a Nodejs / Express server and link it to a MongoDb database. After that I also had to create an authentication system and a CRUD system to manage the data stored in the database. I also had to ensure the seurity of the data stored witihn the database using hashing methods which with today's security standards. This project was very formative and I learned a lot about the backend and data management and security. I intend to refactor this project to integrate it into a frontend and create a fullstack application with new possibilities for users such as sharing a book or comment them.",
             "fr": "Pour ce projet j'ai du construire un serveur Nodejs/Express et le relier à une base de données MongoDb. Après cela j'ai du également créer un système d'authentification et un système CRUD pour gérer les données stockées dans la base de données. J'ai également du m'assurer de la sécurité des données stockées au sein de la base de données en utilisant des méthodes de hashage conformes aux standards de sécurité actuels. Ce projet a été très formateur et j'ai beaucoup appris sur le backend et la gestion des données et de la sécurité. Je compte refactoriser ce projet pour l'intégrer à un frontend et créer une application fullstack avec de nouvelles possibilités pour les utilisateurs telles que le partage d'un livre ou les commenter."
+        },
+        "issues": {
+            "en": "This project like the React project had great courses and I learned quickly how to handle the routes. I had some difficulties with the security part of the project, particularly understanding how to make sure my routes were secure when feching data but I was able to solve them through research and testing.",
+            "fr": "Ce projet comme le projet React avait de très bons cours et j'ai appris rapidement à gérer les routes. J'ai eu quelques difficultés avec la partie sécurité du projet, notamment à comprendre comment m'assurer que mes routes étaient sécurisées lors de la récupération de données mais j'ai pu les résoudre grâce à la recherche et aux tests."
         },
         "cover": {
             "url": "/assets/images/projects/Grimoire/Grimoire-cover.webp",
@@ -130,6 +138,10 @@
             "en": "This project is built dynamically with JavaScript and has a token-secured connection system and a backend that allows data to be retrieved and stored. My mission was multiple: Retrieve the data stored in the database and filter the works according to their categories, manage the secure connection system via authentication token recovery and create a modal to view and modify the files present in the database live. All in pure Javascript. This project was very formative and it is currently being redesigned.",
             "fr": "Ce projet est construit de façon dynamique avec JavaScript et possède un système de connexion sécurisé par token et un backend qui permet de récupérer et stocker des données. Ma mission était multiple : Récupérer les données stockées dans la base de données et filtrer les travaux selon leurs catégories, gérer le système de connexion sécurisé via récupération de token d'authentification et créer une modale permettant de visualiser et de modifier en direct les fichiers présents dans la base de données. Le tout en pur Javascript. Ce projet a été très formatteur et il est actuellement en refonte."
         },
+        "issues": {
+            "en": "I have to admit the biggest issue I had was to understand why working locally could affect cors issues and how to circumvent them. Another issue was to understand the asynchronous nature of Javascript and how to manage the data fetched from the server. It was the beginning of my web dev journey and I took the time to make sure I understood the concepts before moving on.",
+            "fr": "Je dois avouer que le plus gros problème que j'ai eu était de comprendre pourquoi travailler en local pouvait affecter les problèmes de cors et comment les contourner. Un autre problème était de comprendre la nature asynchrone de Javascript et comment gérer les données récupérées du serveur. C'était le début de mon parcours de développeur web et j'ai pris le temps de m'assurer que je comprenais les concepts avant de passer à autre chose."
+        },
         "cover": {
             "url": "/assets/images/projects/Bluel/Bluel-cover.webp",
             "alt": {
@@ -184,6 +196,10 @@
         "detailedDescription": {
             "en": "The objective of this project was to identify bugs in the CSS created by the client and then optimize the site's performance, accessibility, and local SEO. At the time, I wasn't familiar with Bootstrap, and it was interesting to work through code that I hadn't written myself. I had to create several metadata elements to optimize local SEO and address a number of accessibility issues, particularly related to buttons and empty alt attributes on images.",
             "fr": "L'objectif de ce projet était trouver des bugs dans le CSS créé par la cliente puis d'optimiser les performances du site, son accessibilité ainsi que son réferencement local. À l'époque je ne connaissais pas bootstrap et il était intéressant de parcourir du code que l'on a pas conçu soi-même. J'ai du créer un certain nombre de métadonnées pour optimiser le réferencement local et gérer un certain nombre de problèmes d'accessibilité notamment dus à des boutons et des balises alt vides sur les images."
+        },
+        "issues": {
+            "en": "At first I had no issues understanding how to optimize the project, but I admit I was scared having to deal with a project that wasn't mine. I could not take the time to understand the code and the structure of the project or learn Bootstrap, but I got the logic quickly (it wasn't hard to be honest although Bootstrap was daunting). In the end the main problem was balance the optimization results and the time it took to setup.",
+            "fr": "Au début je n'ai pas eu de problèmes à comprendre comment optimiser le projet mais j'avoue que j'avais peur de devoir gérer un projet qui n'était pas le mien. Je n'ai pas pu prendre le temps de comprendre le code et la structure du projet ou d'apprendre Bootstrap mais j'ai compris la logique rapidement (ce n'était pas difficile pour être honnête même si Bootstrap était intimidant). Au final le problème principal était d'équilibrer les résultats de l'optimisation et le temps que cela prenait à mettre en place."
         },
         "cover": {
             "url": "/assets/images/projects/Carducci/PhotographPortfolioCover-small.webp",

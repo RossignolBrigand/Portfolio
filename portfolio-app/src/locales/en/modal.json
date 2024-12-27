@@ -1,4 +1,6 @@
 {
-  "visitWebsite": "Visit the website",
-  "visitCodebase": "View the codebase"
+    "descriptionTitle": "Description:",
+    "issuesTitle": "Issues:",
+    "visitWebsite": "Visit the website",
+    "visitCodebase": "View the codebase"
 }

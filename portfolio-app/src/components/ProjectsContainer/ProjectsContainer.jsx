@@ -28,9 +28,10 @@ export default function ProjectsContainer() {
             name: project.name[language],
             description: project.description[language],
             detailedDescription: project.detailedDescription[language],
+            issues: project.issues[language],
             cover: {
                 url: project.cover.url,
-                alt: project.cover.alt[language],
+                alt: project.cover.alt[language] || '',
             },
             images: localizedImages,
         };

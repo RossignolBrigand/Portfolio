@@ -1,4 +1,6 @@
 {
-  "visitWebsite": "Visiter le site",
-  "visitCodebase": "Voir le code"
+    "descriptionTitle": "Description:",
+    "issuesTitle": "Problématiques:",
+    "visitWebsite": "Visiter le site",
+    "visitCodebase": "Voir le code"
 }
