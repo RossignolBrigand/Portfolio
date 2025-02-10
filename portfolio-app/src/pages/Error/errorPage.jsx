@@ -2,7 +2,6 @@ import Button from '../../components/Button/Button';
 import { useTranslation } from 'react-i18next';
 
 import './_errorPage.scss';
-import Header from '../../layout/Header/Header';
 
 function ErrorPage() {
     const { t } = useTranslation('errorPage');

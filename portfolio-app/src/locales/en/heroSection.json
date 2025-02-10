@@ -1,7 +1,7 @@
 {
-    "presentation": "Hi, my name is <strong>Thomas</strong> and I'm a <strong>fullstack</strong> web-developer.",
+    "presentation": "Hi, my name is <strong>Thomas</strong> and I'm a <strong>full-stack</strong> web-developer.",
     "summary": {
-        "paragraph1": "I am a dedicated web developer with expertise in creating responsive, user-friendly websites and dynamic applications. Proficient in technologies like HTML, CSS, JavaScript, React, Node.js, and MongoDB, I specialize in both front-end and back-end development.",
+        "paragraph1": "I am a dedicated web developer with expertise in creating responsive, user-friendly websites and dynamic applications. Proficient in technologies like HTML, CSS, JavaScript, React, Node.js, and MongoDB, I specialize in both front-end and back-end development. I graduated in January 2025 and am currently looking for opportunities where they may arise.",
         "paragraph2": "My focus is on delivering optimized, SEO-friendly solutions tailored to meet each client’s unique needs. Whether it’s a static website for a small business or a dynamic application, I thrive on turning ideas into polished digital experiences."
     },
     "cta": {

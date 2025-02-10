@@ -89,7 +89,7 @@ export default function SkillsSection() {
                         <li>
                             <RatingBar
                                 label={'Sass'}
-                                rating={3}
+                                rating={4}
                                 icon={<DiSass className="svg__Sass" />}
                             />
                         </li>
@@ -145,6 +145,10 @@ export default function SkillsSection() {
                                 Npm
                             </li>
                             <li>
+                                <DiCode />
+                                Pnpm
+                            </li>
+                            <li>
                                 <PostmanIcon className="svg__Postman" />
                                 Postman
                             </li>
@@ -164,6 +168,10 @@ export default function SkillsSection() {
                                 <WebpackIcon className="svg__Webpack" />
                                 Webpack
                             </li>
+                            <li>
+                                <DiCode />
+                                Yarn
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -175,7 +183,8 @@ export default function SkillsSection() {
                     <li>Debug / Testing</li>
                     <li>E-commerce</li>
                     <li>Next.js</li>
-                    <li>PHP/ MySQL</li>
+                    <li>PHP/ Symfony</li>
+                    <li>PostgreSQL / MySQL</li>
                     <li>Python</li>
                     <li>Wordpress</li>
                 </ul>
